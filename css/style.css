@@ -1,0 +1,336 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     padding: 0 200px;
+     background-color: black;
+}
+.container {
+     display: flex;
+}
+header {
+     height: 70px;
+     width: 100%;
+     background-color: #66768A;
+     color: white;
+}
+nav {
+     display: flex;
+     justify-content: space-between;
+     padding: 10px 30px 0 30px;
+}
+nav ul {
+     display: flex;
+     flex-direction: row;
+     
+}
+nav ul li {
+     list-style-type: none;
+     padding-right: 10px;
+   
+}
+.first {
+     background-color: #66768A;
+     height: 500px;
+     display: flex;
+     flex-direction: column;
+     color: white;
+     align-items: center;
+}
+.first h1 {
+     font-family: 'PT Serif', serif;
+     font-weight: bold;
+     font-size: 50px;
+}
+.first h3{
+     width: 80%;
+     display: flex;
+     text-align: center;
+     font-family: 'Inter', sans-serif;
+     font-weight: bold;
+     font-size: 18px;
+}
+.first p {
+     font-family: 'Inter', sans-serif;
+     font-weight: bold;
+     font-size: 18px;
+     padding-bottom: 50px;
+}
+.fa-play-circle {
+     padding-right: 10px;
+}
+.first span {
+     color: #444857;
+     padding-top: 80px;
+
+}
+.second {
+     background-color: #FFFFFF;
+     height: 350px;
+     display: flex;
+     flex-direction: column;
+     color: black;
+     align-items: center;
+     padding: 30px 0;
+}
+.second h1 {
+     font-family: 'PT Serif', serif;
+     font-weight: bold;
+     font-size: 30px;
+     margin-top: 20px;
+}
+.second p {
+     width: 50%;
+     display: flex;
+     text-align: center;
+     font-family: 'Inter', sans-serif;
+     font-weight: 300;
+     font-size: 14px;
+
+}
+.third {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: center;
+     height: 620px;
+     background-color: #DBDFE2;;
+     margin: auto;
+}
+.box {
+     width: 300px;
+     height: 170px;
+     box-shadow: #000;
+     background-color: #66768A;
+}
+.left-div {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 30px 30px;
+}
+.right-div {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 30px 30px;
+}
+.right-div p, .left-div p {
+     width: 50%;
+}
+.fourth {
+     background-color: #FFFFFF;
+     height: 450px;
+     display: flex;
+     flex-direction: column;
+     color: black;
+     align-items: center;
+     padding: 30px 0;
+}
+.fourth h1 {
+     font-family: 'PT Serif', serif;
+     font-weight: bold;
+}
+.fourth p {
+     width: 50%;
+     display: flex;
+     text-align: center;
+     font-family: 'Inter', sans-serif;
+     font-weight: 300;
+     font-size: 14px;
+}
+footer {
+     height: 300px;
+     background-color: #161F2A;
+     color: white;
+     padding: 30px;
+}
+.left-sect ul {
+     display: flex;
+     flex-direction: row;
+}
+.left-sect ul li {
+     padding-right: 30px;
+     list-style-type: none;
+}
+.left-sect div { 
+     display: flex;
+     flex-flow: column;
+}
+.left-sect div ul {
+     position: relative;
+     right: 40px;
+}
+.left-sect div p {
+    padding-right: 10px;
+}
+.left-sect span { 
+     color: #5F6D81;
+}
+.footer {
+     display: flex;
+     justify-content: space-between;
+}
+.right-sect {
+     display: flex;
+     flex-direction: column;
+}
+.right-sect h3 {
+     width: 60%;
+}
+.right-sect p {
+     margin: 0;
+     font-weight: lighter;
+}
+.bold {
+     font-weight: bold;
+}
+.bottom-sect {
+     border-top:1px white solid;
+     margin-top: 30px;
+     padding-top: 30px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     font-size: 14px;
+}
+.fab, .fas {
+     font-size: 20px;
+}
+button {
+     width: 165px;
+     height: 55px;
+     border: 1px solid #979797;
+     background: transparent;
+     font-family: 'PT Serif', serif;
+}
+.donate {
+     background: #FFFFFF;
+     width:70px;
+     height:35px;
+     border-radius: 5px;
+     color: rgb(105,121,141);
+     font-weight: bold;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 600px) {
+     body {
+          padding: 0;
+     }
+     .first h1 { 
+          text-align: center;
+     }
+     .first p {
+          padding-bottom: 0;
+     }
+     .first span {
+          padding: 0;
+     }
+     .second {
+          height: 400px;
+     }
+     .third {
+          display: flex;
+          flex-direction: column;
+          padding: 30px;
+          justify-content: space-around;
+          height: 1200px
+     }
+     .fourth {
+          height: 500px;
+     }
+     .fourth button {
+          width: 165px;
+          height: 55px;
+          border: 1px solid #979797;
+          background: transparent;
+          font-family: 'PT Serif', serif;
+     }
+    
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+     body {
+          padding: 0;
+     }
+     .first h1 { 
+          text-align: center;
+     }
+     .first p {
+          padding-bottom: 0;
+     }
+     .first span {
+          padding: 0;
+     }
+     .third {
+          display: flex;
+          flex-direction: column;
+          padding: 30px;
+          justify-content: space-around;
+          height: 1200px
+     }
+     .bottom-sect {
+          padding: 0 20px;
+     }
+}
+@media screen and (min-width: 1201px) and (max-width: 5000px) {
+     .first h1 { 
+          text-align: center;
+     }
+     .first p {
+          padding-bottom: 0;
+     }
+     .first span {
+          padding: 0;
+     }
+}
